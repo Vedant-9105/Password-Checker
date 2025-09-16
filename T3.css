@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1a1a2e;
+    font-family: 'Poppins', sans-serif;
+    color: #e0e0e0;
+    margin: 0;
+}
+
+.checker-container {
+    background-color: #16213e;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h2 {
+    color: #0f3460;
+    margin-bottom: 25px;
+    color: #e94560;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#password-input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #533483;
+    background-color: #1a1a2e;
+    border-radius: 8px;
+    color: #e0e0e0;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+#password-input:focus {
+    outline: none;
+    border-color: #e94560;
+}
+
+#toggle-password {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    user-select: none;
+}
+
+.strength-meter {
+    height: 10px;
+    width: 100%;
+    background-color: #1a1a2e;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+#strength-bar {
+    height: 100%;
+    width: 0;
+    background-color: #e74c3c;
+    border-radius: 5px;
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+#strength-text {
+    font-weight: 500;
+    min-height: 24px;
+    transition: color 0.3s ease;
+}
+
+#criteria-checklist ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    font-size: 14px;
+}
+
+#criteria-checklist li {
+    margin-bottom: 8px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
